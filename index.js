@@ -12,8 +12,6 @@ const bee = new Bee.Bee('http://localhost:1633')
 const beeDebug = new Bee.BeeDebug('http://localhost:1635');
 const db = require('./db');
 
-db.run('CREATE TABLE IF NOT EXISTS posts(post_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,reference NVARCHAR(200)');
-
 // const uploadImage = async (image) => {
 //   const postageBatchId = await beeDebug.getAllPostageBatch();
 //   const result = await bee.uploadData(postageBatchId[0].batchID, image)
